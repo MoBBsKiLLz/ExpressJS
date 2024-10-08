@@ -30,7 +30,7 @@ export const createAlbum = async (album: Album) => {
     [album.title, album.artist, album.description, album.year, album.image]);  
 };
 
-export const udpateAlbum = async (album: Album) => {
+export const updateAlbum = async (album: Album) => {
     return execute<OkPacket>(albumQueries.updateAlbum,
         [album.title, album.artist, album.year, album.image, album.description, album.albumId]);
 };

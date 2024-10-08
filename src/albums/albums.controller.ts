@@ -114,7 +114,7 @@ export const createAlbum: RequestHandler = async ( req: Request, res: Response) 
 
 export const updateAlbum: RequestHandler = async ( req: Request, res: Response) => {
     try {
-        const okPacket: OkPacket = await AlbumDao.udpateAlbum(req.body);
+        const okPacket: OkPacket = await AlbumDao.updateAlbum(req.body);
 
         console.log('req.body', req.body);
         console.log('album', okPacket);
